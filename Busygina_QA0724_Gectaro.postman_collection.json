@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "ec950449-a0d2-48da-81ba-536685357c2b",
+		"name": "Busygina_QA0724_Gectaro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30839845"
+	},
+	"item": [
+		{
+			"name": "PaymentOperation_create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"operation_date\": \"1732623009\",\r\n  \"accrual_date\": \"1732623009\",\r\n  \"cost\": 100,\r\n  \"operation_article_id\": 50,\r\n  \"account_id\": 9541,\r\n  \"comment\": \"\",\r\n  \"project_id\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_cost",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"organization_account_id\":9541,\"cost\":10000,\"comment\":\"раз раз раз\",\"operation_article_id\":50,\"project_id\":null,\"operation_date\":\"1732623009\",\"accrual_date\":\"1732623009\",\"account_id\":9541}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_account_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cost\": 10000,\r\n  \"comment\": \"\",\r\n  \"operation_article_id\": 50,\r\n  \"project_id\": null,\r\n  \"operation_date\": \"1732623009\",\r\n  \"accrual_date\": \"1732623009\",\r\n  \"account_id\": 9350\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_contractor_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cost\": 10000,\r\n  \"comment\": \"\",\r\n  \"operation_article_id\": 50,\r\n  \"contractor_id\": 65096,\r\n  \"project_id\": null,\r\n  \"operation_date\": \"1732623009\",\r\n  \"accrual_date\": \"1732623009\",\r\n  \"account_id\": 9350\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_operation_article_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cost\": 10000,\r\n  \"comment\": \"\",\r\n  \"operation_article_id\": 134193,\r\n  \"project_id\": null,\r\n  \"operation_date\": \"1732623009\",\r\n  \"accrual_date\": \"1732623009\",\r\n  \"account_id\": 9350\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"organization_account_id\":9541,\"cost\":100,\"comment\":\"раз раз раз\",\"operation_article_id\":50,\"project_id\":null,\"operation_date\":\"1732623009\",\"accrual_date\":\"1732623009\",\"account_id\":9541}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_operation_date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cost\": 10000,\r\n  \"comment\": \"\",\r\n  \"operation_article_id\": 134193,\r\n  \"project_id\": null,\r\n  \"operation_date\": \"1732525200\",\r\n  \"accrual_date\": \"1732623009\",\r\n  \"account_id\": 9350\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_accrual_date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cost\": 10000,\r\n  \"comment\": \"\",\r\n  \"operation_article_id\": 134193,\r\n  \"project_id\": null,\r\n  \"operation_date\": \"1732623009\",\r\n  \"accrual_date\": \"1732698000\",\r\n  \"account_id\": 9350\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_character_limit_exceeded_comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cost\": 10000,\r\n  \"comment\": \"\",\r\n  \"operation_article_id\": 134193,\r\n  \"project_id\": null,\r\n  \"operation_date\": \"1732623009\",\r\n  \"accrual_date\": \"1732698000\",\r\n  \"account_id\": 9350\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentOperation_change_character_limit_exceeded_cost",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uk5LQEedafx8f0mVzzJJsAWkFlkmo2NR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cost\": 100000000000000000,\r\n  \"comment\": \"\",\r\n  \"operation_article_id\": 134193,\r\n  \"project_id\": null,\r\n  \"operation_date\": \"1732623009\",\r\n  \"accrual_date\": \"1732698000\",\r\n  \"account_id\": 9350\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.gectaro.com/v2/companies/7323/finance/payment-operations/790468",
+					"protocol": "https",
+					"host": [
+						"api",
+						"gectaro",
+						"com"
+					],
+					"path": [
+						"v2",
+						"companies",
+						"7323",
+						"finance",
+						"payment-operations",
+						"790468"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
